@@ -75,7 +75,7 @@ remotes::install_github("ETC5523-2026/etc5523-assignment-4-shro-ots")
 obstrendquest::run_app()
 ```
 
-The app uses \`compare_obesity_trend()\` to prepare the selected
+The app uses `compare_obesity_trend()` to prepare the selected
 comparison. You can also call it directly:
 
 ``` r
