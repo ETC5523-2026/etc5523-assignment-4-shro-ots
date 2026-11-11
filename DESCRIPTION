@@ -1,10 +1,12 @@
-Package: assignment4
-Title: What the Package Does (One Line, Title Case)
+Package: obstrendquest
+Title: Exploring Adult Obesity Trends on a Global Scale
 Version: 0.0.0.9000
 Authors@R: 
     person("Shruti", "Pillai", , "spil0011@student.monash.edu", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Tools and a Shiny app for exploring adult obesity estimates over time and comparing countries and continents.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Config/roxygen2/version: 8.1.1
+Imports: 
+    shiny
