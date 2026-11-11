@@ -1,0 +1,19 @@
+---
+title: "obesity-trend-quest"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{obesity-trend-quest}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(obstrendquest)
+```
