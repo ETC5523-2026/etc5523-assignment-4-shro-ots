@@ -2,6 +2,9 @@
 
 A visual guide to adult obesity trends across countries and continents.
 
+**Package documentation website**:
+<https://etc5523-2026.github.io/etc5523-assignment-4-shro-ots/>
+
 ## Purpose
 
 **The question:** How have adult obesity estimates changed over time,
