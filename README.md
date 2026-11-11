@@ -66,9 +66,7 @@ Install the package from GitHub:
 
 ``` r
 install.packages("remotes")
-remotes::install_github(
-  "ETC5523-2026/etc5523-assignment-4-shro-ots"
-)
+remotes::install_github("ETC5523-2026/etc5523-assignment-4-shro-ots")
 ```
 
 ## Launching
