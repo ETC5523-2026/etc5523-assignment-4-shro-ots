@@ -1,0 +1,106 @@
+# Obesity Trend Comparison
+
+A visual guide to adult obesity trends across countries and continents.
+
+## Purpose
+
+**The question:** How have adult obesity estimates changed over time,
+and how do those patterns compare across places?
+
+Obesity Trend Quest is an R package with an interactive Shiny app for
+students, public-health analysts, and curious readers who want an
+approachable way to explore these trends. Choose a year range, then look
+at one country or area alongside the rest of its continent, compare a
+few countries or areas, or even compare continent averages. The graph
+shows how the estimates move, and the quick-read notes highlight how
+much each line changed between the first and last year you selected.
+
+The app helps you spot patterns and ask better follow-up questions. It’s
+important to note that these estimates don’t explain why a trend changed
+or show that a specific change in policy may have caused it, so treat
+the comparisons as a starting point for discussion instead of a
+foundation.
+
+### What you can explore
+
+- **One country vs. the rest of its continent:** compare one country or
+  area with the unweighted average for the other places in that
+  continent.
+
+- **Compare countries/areas:** view 2–5 selected places.
+
+- **Compare continents:** view 2–5 continent averages.
+
+Choose a year range to update the graph and its summary.
+
+## Data
+
+Obesity Trend Quest comes with a prepared dataset called `obesity_data`,
+so the app can use it straight away. It covers 1980–2024 and has five
+fields: `entity`, `code`, `year`, `obesity_pct`, and `region`.
+
+The adult-obesity estimates come from the [WHO Global Health
+Observatory](https://www.who.int/data/gho) accessed through the [Our
+World in Data adult obesity
+grapher](https://ourworldindata.org/grapher/share-of-adults-defined-as-obese).
+
+**Credit: World Health Organization – Global Health Observatory (2026) –
+with minor processing by Our World in Data.**
+
+The WHO data is listed as **CC BY-NC-SA 4.0**. The package’s R code has
+a separate **MIT** licence. Keep the data’s source README and metadata
+with it, and check them before reusing or redistributing the data.
+
+A quick note on the numbers: they estimate the percentage of adults
+classified as obese, rather than counting people. The continent averages
+in this package are calculated across the included countries or areas,
+with every place counting equally regardless of population. So they help
+you compare places, but they aren’t estimates for the average person in
+a continent. In the country comparison, the selected country is left out
+of its continent average.
+
+## Installation
+
+Install the package from GitHub:
+
+``` r
+
+install.packages("remotes")
+remotes::install_github("ETC5523-2026/etc5523-assignment-4-shro-ots")
+```
+
+## Launching
+
+``` r
+
+obstrendquest::run_app()
+```
+
+The app uses
+[`compare_obesity_trend()`](https://etc5523-2026.github.io/etc5523-assignment-4-shro-ots/reference/compare_obesity_trend.md)
+to prepare the selected comparison. You can also call it directly:
+
+``` r
+
+utils::data("obesity_data", package = "obstrendquest")
+
+obstrendquest::compare_obesity_trend(
+  data = obesity_data,
+  comparison_mode = "countries",
+  selections = c("India", "Australia"),
+  start_year = 1980,
+  end_year = 1985
+)
+```
+
+The function returns a table with `year`, `series`, and `obesity_pct`
+columns. Run
+[`?compare_obesity_trend`](https://etc5523-2026.github.io/etc5523-assignment-4-shro-ots/reference/compare_obesity_trend.md)
+in R for details.
+
+## AI-use declaration
+
+Claude was used to help plan the project (project timeline scheduling),
+refine the app design, debug R/Shiny code, and draft/edit some code and
+documentation. I reviewed, adapted, and tested any and all suggestions
+that were made.

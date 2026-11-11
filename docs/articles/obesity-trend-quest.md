@@ -1,0 +1,70 @@
+# An Obesity Trend Quest Walkthrough!
+
+## Welcome! What can this package do?
+
+Obesity Trend Quest lets you explore how adult obesity estimates have
+changed across countries and continents. You can use the interactive
+app, or work with the packaged data and comparison function in R.
+
+It’s designed for students, public-health analysts, and curious readers.
+Use it to spot and discuss patterns, but not to decide why a trend
+happened or whether a policy worked.
+
+## Install and open the app
+
+First time using Obesity Trend Quest? You’ll need an internet connection
+to install it from GitHub. Run these commands in your R Console. You
+only need to install the package once; if you already have it, skip this
+step.
+
+``` r
+
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+install.packages("remotes")
+remotes::install_github(
+  "ETC5523-2026/etc5523-assignment-4-shro-ots"
+)
+```
+
+Once installation finishes, open the app by running this command in your
+R Console:
+
+``` r
+
+obstrendquest::run_app()
+```
+
+## Pick a path to explore
+
+The app gives you three ways to compare estimates:
+
+- **One country vs. the rest of its continent:** see how a country or
+  area compares with the average for the other included places in its
+  continent.
+- **Compare countries/areas:** choose 2–5 places and see how their
+  estimates change over time.
+- **Compare continents:** compare estimates averaged across 2–5
+  continents.
+
+Choose the places you’re interested in, then set the year range. The
+graph updates to show the trends, and the quick-read summary gives you a
+handy snapshot of how each estimate changed between the first and last
+years you chose.
+
+## Making sense of the numbers
+
+The lines show estimated percentages of adults over time. The summary
+shows the starting estimate, the ending estimate, and the difference in
+**percentage points**.
+
+For example, a change from 10% to 14% is an increase of 4 percentage
+points and not a 4% relative increase. If the difference is positive,
+the estimate went up and if it’s negative, it went down.
+
+## A few limitations to keep in mind
+
+These figures are estimates, not a count of people. The app can help you
+spot patterns, but it can’t tell you what caused them or whether a
+policy worked. Continent comparisons give every included country or area
+equal weight, regardless of population, so they aren’t estimates for the
+average person in that continent.
