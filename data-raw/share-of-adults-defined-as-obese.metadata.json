@@ -1,0 +1,49 @@
+{
+  "chart": {
+    "title": "Share of adults who are obese",
+    "subtitle": "Obesity is defined here as a body mass index (BMI) above 30. BMI is a person's weight in kilograms divided by the square of their height in meters.",
+    "note": "",
+    "citation": "World Health Organization – Global Health Observatory (2026)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/share-of-adults-defined-as-obese?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "South-East Asia (WHO)",
+      "Western Pacific (WHO)",
+      "Africa (WHO)",
+      "Europe (WHO)",
+      "Eastern Mediterranean (WHO)",
+      "Americas (WHO)"
+    ]
+  },
+  "columns": {
+    "Obesity among adults, BMI >= 30 kg/m2 (crude estimate) (%) - Sex: both sexes - Age group: 18+  years of age": {
+      "titleShort": "Obesity among adults, BMI >= 30 kg/m2 (crude estimate) (%) - Sex: both sexes - Age group: 18+  years of age",
+      "titleLong": "Obesity among adults, BMI >= 30 kg/m2 (crude estimate) (%) - Sex: both sexes - Age group: 18+  years of age",
+      "unit": "%",
+      "timespan": "1980-2024",
+      "type": "Numeric",
+      "owidVariableId": 1248813,
+      "shortName": "obesity_among_adults__bmi__gt__30_kg_m2__crude_estimate__pct__sex_both_sexes__age_group_18plus__years_of_age",
+      "lastUpdated": "2026-05-22",
+      "nextUpdate": "2027-05-22",
+      "citationShort": "World Health Organization – Global Health Observatory (2026) – with minor processing by Our World in Data",
+      "citationLong": "World Health Organization – Global Health Observatory (2026) – with minor processing by Our World in Data. “Obesity among adults, BMI >= 30 kg/m2 (crude estimate) (%) - Sex: both sexes - Age group: 18+  years of age – WHO” [dataset]. World Health Organization, “Global Health Observatory” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1248813.metadata.json"
+    },
+    "World region according to OWID": {
+      "titleShort": "World region according to OWID",
+      "titleLong": "World region according to OWID",
+      "descriptionShort": "Regions defined by Our World in Data, which are used in OWID charts and maps.",
+      "unit": "",
+      "timespan": "2023-2023",
+      "type": "Continent",
+      "owidVariableId": 900801,
+      "shortName": "owid_region",
+      "lastUpdated": "2023-01-01",
+      "citationShort": "Our World in Data",
+      "citationLong": "Our World in Data. “World region according to OWID” [dataset]. Our World in Data, “Regions” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/900801.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-11-10",
+  "activeFilters": {}
+}
