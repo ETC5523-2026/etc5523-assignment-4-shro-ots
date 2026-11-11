@@ -94,7 +94,7 @@ compare_obesity_trend <- function(
       c("year", "obesity_pct")
     ]
 
-    rest_mean <- aggregate(
+    rest_mean <- stats::aggregate(
       obesity_pct ~ year,
       data = rest_data,
       FUN = mean
@@ -129,7 +129,7 @@ compare_obesity_trend <- function(
       c("year", "region", "obesity_pct")
     ]
 
-    continent_means <- aggregate(
+    continent_means <- stats::aggregate(
       obesity_pct ~ year + region,
       data = continent_data,
       FUN = mean
